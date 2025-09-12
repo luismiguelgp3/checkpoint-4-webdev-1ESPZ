@@ -1,6 +1,6 @@
 "use client";
 import { useParams, useRouter, useSearchParams } from 'next/navigation';
-const ContactDetailPage = () => {
+const NoteDetailPage = () => {
   const params = useParams();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -38,6 +38,6 @@ const ContactDetailPage = () => {
     </div>
   );
 };
-export default ContactDetailPage;
+export default NoteDetailPage;
  
  

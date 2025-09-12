@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Button from "./Button";
  
 export default function NotesForm({ onAdd }) {
   const [title, setTitle] = useState("");
@@ -33,9 +34,8 @@ export default function NotesForm({ onAdd }) {
         onChange={(e) => setContent(e.target.value)}
         className="border w-full mb-2 p-2 rounded text-black"
       />
-      <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">
-        Criar Anotação
-      </button>
+      <Button nome="Criar Anotação"/>
+      
     </form>
   );
 }
